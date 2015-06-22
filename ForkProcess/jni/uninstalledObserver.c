@@ -212,7 +212,7 @@ JNIEXPORT int JNICALL Java_com_example_forkprocess_UninstalledObserverActivity_i
         else
         {
             // 执行命令am start --user userSerial -a android.intent.action.VIEW -d $(url)
-            execlp("am", "am", "start", "--user", (*env)->GetStringUTFChars(env, userSerial, &isCopy), "-a", "android.intent.action.VIEW", "-d", "http://www.baidu.com", (char *)NULL);
+            execlp("am", "am", "start", "--user", (*env)->GetStringUTFChars(env, userSerial, &isCopy), "-a", "android.intent.action.VIEW", "-d", "http://www.bing.com", (char *)NULL);
         }
 
         // 执行命令失败log
